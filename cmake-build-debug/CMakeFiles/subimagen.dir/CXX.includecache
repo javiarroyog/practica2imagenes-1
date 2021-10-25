@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../estudiante/include/image.h
+cstdlib
+-
+imageIO.h
+../estudiante/include/imageIO.h
+
+../estudiante/include/imageIO.h
+
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/estudiante/src/subimagen.cpp
+iostream
+-
+cstring
+-
+cstdlib
+-
+image.h
+-
+

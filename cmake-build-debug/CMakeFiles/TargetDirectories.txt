@@ -1,0 +1,10 @@
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/barajar.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/contraste.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/zoom.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/image.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/subimagen.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/negativo.dir
+/Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug/CMakeFiles/icono.dir

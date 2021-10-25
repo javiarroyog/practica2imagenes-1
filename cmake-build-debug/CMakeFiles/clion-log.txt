@@ -1,0 +1,5 @@
+/private/var/folders/09/qpt16xwn3_xgfzjxjjcnw0zh0000gn/T/AppTranslocation/936B2362-4325-409C-82F9-1C9ECAF349D5/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/javi/Desktop/UGR/ED/practica2imagenes-1
+Doxygen build started
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/javi/Desktop/UGR/ED/practica2imagenes-1/cmake-build-debug

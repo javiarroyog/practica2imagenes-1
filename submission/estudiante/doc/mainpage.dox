@@ -1,0 +1,102 @@
+/*! \mainpage Práctica 2 Abstracción. TDA Imagen
+
+@image html UGR.png "Javier Arroyo García, B3"
+
+# Introducción
+
+En está práctica vamos a tratar el procesamiento de imagenes con formato PGM (Portable Gray Map).
+
+A la hora de implementar programas de manipulación de imágenes digitales vamos a utilizar
+un tipo de dato abstracto (TDA).
+Antes de nada, debemos considerar que previamente a su manipulación se requiere que la imagen resida en memoria y que,
+una vez que finalice el procesamiento, deberemos liberar la memoria que ocupaba. Hay dos operaciones básicas necesarias
+que son comunes a prácticamente la totalidad de procesos sobre una imagen: consultar el valor de un punto de la imagen
+y asignar un valor a un punto de la imagen. Todas las operaciones de procesamiento se pueden hacer en base a estas dos
+simples operaciones. Realmente no se requiere más para construir un programa de procesamiento de imágenes, aunque es
+útil disponer de dos operaciones  complementarias: consultar el número de filas y
+consultar el número de columnas de una imagen.
+
+Definiremos una imagen como : Image imagen;
+En memoria, está imagen se representará como una matriz dinámica, los pasos para obtenerla serán:
+
+1. Reservamos rows punteros a listas de bytes.
+img = new byte * [rows]
+2. Reservamos rows*cols bytes
+byte * total = new byte [rows * cols]
+3. Asignamos a cada puntero a fila la posición del primer byte correspondiente.
+
+     for (int i=0; i < rows; i++)
+
+     img[i] = total[i*cols];
+
+
+# Ejecutables
+
+
+## Negativo:
+@image html invert.png
+
+Calcula el negativo de una imagen
+
+> __negativo__ \<FichImagenOriginal\> \<FichImagenDestino\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param <FichImagenDestino> Imagen PGM resultado de calcular el negativo
+
+
+## Subimagen:
+@image html sub.png
+
+Genera una subimagen de una imagen
+
+> __subimagen__ \<FichImagenOriginal\> \<FichImagenDestino\> <fila> <col> <filas_sub> <cols_sub>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param "<FichImagenDestino>" Imagen PGM resultado de generar la subimagen
+@param "<fila>" Componente i de la esquina superior izquierda de la subimagen
+@param "<col>" Componente j de la esquina superior izquierda de la subimagen
+@param "<filas_sub>" Número de filas de la subimagen de la subimagen
+@param "<columnas_sub>" Número de columnas de la subimagen de la subimagen
+
+
+## Zoom:
+@image html zoom.png
+
+Genera una imagen aumentada 2x
+
+> __zoom__ \<FichImagenOriginal\> \<FichImagenDestino\> <fila> <col> <lado>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param "<FichImagenDestino>" Imagen PGM resultado de generar la subimagen
+@param "<fila>" Componente i de la esquina superior izquierda de la subimagen
+@param "<col>" Componente j de la esquina superior izquierda de la subimagen
+@param "<lado>" Tamaño del lado del cuadrado. El cuadrado descrito debe estar totalmente incluído en la imagen
+
+
+## Icono:
+@image html icono.png
+
+Genera un icono como reducción de una imagen
+
+> __icono__ \<FichImagenOriginal\> \<FichImagenDestino\> <factor>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param "<FichImagenDestino>" Imagen PGM resultado de generar la subimagen
+@param "<factor>" Factor de reducción. La imagen resultante tendrá floor(filas/factor) x floor(cols/factor)
+
+
+## Contraste:
+@image html contraste.png
+
+Modifica el contraste de una Imagen
+
+> __contraste__ \<FichImagenOriginal\> \<FichImagenDestino\> <e1> <e2> <s1> <s2>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param "<FichImagenDestino>" Imagen PGM resultado de generar la subimagen
+@param "<e1> <e2> <s1> <s2>" Valores usados para la transdformación
+
+## Barajar:
+
+Baraja pseudoaleatoriamente las filas de una imagen
+
+> __contraste__ \<FichImagenOriginal\> \<FichImagenDestino\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param "<FichImagenDestino>" Imagen PGM resultado de generar la subimagen
+
+*/
